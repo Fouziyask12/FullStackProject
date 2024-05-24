@@ -1,0 +1,16 @@
+<form [formGroup]="vendorForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Email:</label>
+      <input formControlName="email" placeholder="Email">
+    </div>
+    <div>
+      <label>Name:</label>
+      <input formControlName="name" placeholder="Name">
+    </div>
+    <div>
+      <label>UPI:</label>
+      <input formControlName="upi" placeholder="UPI">
+    </div>
+    <button type="submit">Save Vendor</button>
+  </form>
+  

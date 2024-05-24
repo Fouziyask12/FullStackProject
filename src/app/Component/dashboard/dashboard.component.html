@@ -1,0 +1,16 @@
+<div>
+    <h2>Employees</h2>
+    <select [(ngModel)]="selectedEmployeeEmail">
+      <option *ngFor="let employee of employees" [value]="employee.email">{{ employee.name }}</option>
+    </select>
+  </div>
+  
+  <div>
+    <h2>Vendors</h2>
+    <select [(ngModel)]="selectedVendorEmail">
+      <option *ngFor="let vendor of vendors" [value]="vendor.email">{{ vendor.name }}</option>
+    </select>
+    
+    </div>
+    <button (click)="onSendEmail()">Send Email</button>
+  

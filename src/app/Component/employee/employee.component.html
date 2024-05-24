@@ -1,0 +1,20 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Email:</label>
+      <input formControlName="email" placeholder="Email">
+    </div>
+    <div>
+      <label>Name:</label>
+      <input formControlName="name" placeholder="Name">
+    </div>
+    <div>
+      <label>Designation:</label>
+      <input formControlName="designation" placeholder="Designation">
+    </div>
+    <div>
+      <label>CTC:</label>
+      <input formControlName="ctc" type="number" placeholder="CTC">
+    </div>
+    <button type="submit">Save Employee</button>
+  </form>
+  
